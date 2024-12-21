@@ -1,0 +1,15 @@
+<ModuleDefinition
+	ModuleId="Cheetah"
+	VersionId="1"
+	Description="Implementation of a vehicle example using the Cheetah model"
+	ScriptFile="Cheetah"
+	CreateFunction="onCreate"
+	DestroyFunction="onDestroy"
+	Group="Game"
+    Dependencies="UI=1">
+	<DeclaredAssets
+        canSave="true"
+        canSaveDynamicFields="true"
+        Extension="asset.taml"
+        Recurse="true" />
+</ModuleDefinition>

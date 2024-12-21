@@ -1,0 +1,12 @@
+<SoundAsset
+    AssetName="cheetahEngine"
+    soundFile="@assetFile=cheetah_engine.ogg"
+    is3D="true"
+    isLooping="true"
+    minDistance="0"
+    maxDistance="25"
+    sourceGroup="AudioChannelEffects"
+    pitch="1"
+    priority="1"
+    VersionId="1"
+    volume="1"/>
