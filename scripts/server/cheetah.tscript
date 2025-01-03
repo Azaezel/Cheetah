@@ -167,5 +167,16 @@ function Cheetah::setSpawnObjectType(%this, %client)
     %client.spawnClass = "WheeledVehicle";
     %client.spawnDBType = "WheeledVehicleData";
     %client.spawnDataBlock = "CheetahCar";
-    %client.onSetSpawnObjectTypeComplete();
+    
+    %this.setSpawnObjectTypeComplete(%client);
+}
+
+function Cheetah::setSpawnObjectTypeComplete(%this, %client)
+{
+   %client.getEventManager().postEvent("setSpawnObjectTypeComplete", %client);
+}
+
+function Cheetah::setSpawnObjectTypeFailed(%this, %client)
+{
+   %client.getEventManager().postEvent("setSpawnObjectTypeFailed", %client);
 }
