@@ -176,6 +176,11 @@ function Cheetah::setSpawnObjectTypeComplete(%this, %client)
    %client.getEventManager().postEvent("setSpawnObjectTypeComplete", %client);
 }
 
+function Cheetah::onPostSpawn(%this, %client)
+{
+   commandToClient(%client, 'toggleVehicleMap', true);
+}
+
 function Cheetah::setSpawnObjectTypeFailed(%this, %client)
 {
    %client.getEventManager().postEvent("setSpawnObjectTypeFailed", %client);
