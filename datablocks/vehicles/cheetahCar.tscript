@@ -292,8 +292,8 @@ datablock WheeledVehicleSpring(CheetahCarSpring)
 {
    // Wheel suspension properties
    length = 0.5;             // Suspension travel
-   force = 2800;              // Spring force
-   damping = 3600;             // Spring damping
+   force = 3600;              // Spring force
+   damping = 2800;             // Spring damping
    antiSwayForce = 300;         // Lateral anti-sway force
 };
 
@@ -318,7 +318,7 @@ datablock WheeledVehicleData(CheetahCar)
    cameraDecay = 1.25;        // Decay per sec. rate of velocity lag
 
    // Rigid Body
-   mass = "400";
+   mass = "1200";
    massCenter = "0 0.5 0";    // Center of mass for rigid body
    massBox = "0 0 0";         // Size of box used for moment of inertia,
                               // if zero it defaults to object bounding box
@@ -329,14 +329,14 @@ datablock WheeledVehicleData(CheetahCar)
    softImpactSpeed = 5;       // Play SoftImpact Sound
    hardImpactSpeed = 15;      // Play HardImpact Sound
    integration = 8;           // Physics integration: TickSec/Rate
-   collisionTol = "0.1";        // Collision distance tolerance
-   contactTol = "0.4";          // Contact velocity tolerance
+   collisionTol = "0.1";      // Collision distance tolerance
+   contactTol = "0.4";        // Contact velocity tolerance
 
    // Engine
    engineTorque = 4300;       // Engine power
-   engineBrake = "5000";         // Braking when throttle is 0
-   brakeTorque = "10000";        // When brakes are applied
-   maxWheelSpeed = 50;        // Engine scale by current speed / max speed
+   engineBrake = "5000";      // Braking when throttle is 0
+   brakeTorque = "10000";     // When brakes are applied
+   maxWheelSpeed = 25;        // Engine scale by current speed / max speed
 
    // Energy
    maxEnergy = 100;
@@ -369,4 +369,5 @@ datablock WheeledVehicleData(CheetahCar)
    
    dustTrailEmitter = "CheetahTireEmitter";
    triggerDustHeight = "-0.1";
+   downforce = 0.01;
 };
